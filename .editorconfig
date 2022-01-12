@@ -1,9 +1,15 @@
-root = true
+# 官网：https://editorconfig.org
 
-[*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
+root = true # 控制 .editorconfig 是否生效的字段
+
+[*] # 匹配所有文件
+charset = utf-8 # 设置字符集
+indent_style = space # 缩进风格，可选"space"、"tab"
+indent_size = 2 # 缩进的空格数
+end_of_line = lf # 结尾换行符，可选"lf"、"cr"、"crlf"，win用cr lf，linux/unix用lf，mac用cr
+insert_final_newline = true # 在文件结尾插入新行
+trim_trailing_whitespace = true # 删除一行中的前后空格
+
+[*.md] # 匹配所有的.md文件
+insert_final_newline = false # 在文件结尾插入新行
+trim_trailing_whitespace = false # 删除一行中的前后空格
